@@ -54,5 +54,15 @@ https://www.jetbrains.com/pycharm/download/download-thanks.html?platform=macM1&c
 
 <img width="1108" alt="Screenshot 2024-05-03 at 12 42 54 AM" src="https://github.com/awkamara/Learning-python/assets/145500282/c074e248-afad-41f1-9b30-dce69fee4c6e">
 
+###**Naming Variables**
+
+These are the naming conventions that would work.
+
+- name = "James"
+- fullName = "J James" or full_name = "J James"
+
+###**Data Type**
+
+
 
 
