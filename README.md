@@ -14,7 +14,8 @@
 - **Comparison Operators**
 - **Logical Operators**
 - **If Statements**
-- **Quick Word 
+- **Quick Word**
+-  
   
 
 ## Installing Python and IDE steps 
@@ -58,11 +59,32 @@ https://www.jetbrains.com/pycharm/download/download-thanks.html?platform=macM1&c
 
 These are the naming conventions that would work.
 
-- name = "James"
-- fullName = "J James" or full_name = "J James"
+- **name = "James"**
+- **fullName = "J James" or full_name = "J James"**
 
-###**Data Type**
+### **Data Type**
+- A **data type represents a kind of value and determines what operations can be done on it. **Numeric, non-numeric and Boolean (true/false)** data are the most obvious
 
 
 
 
+
+###**Dictionary**
+- Dictionary allows you to store data values in keys: called value keys pairs. Every key value should be unique otherwise will be a conflict.
+
+  **EXAMPLE**
+  ```
+  person = {
+    "name": "Azaria",
+    "age": 1,
+    "address": "USA"
+  }
+  print(person["name"])
+  print(person["age"])
+  print(person["address"])
+
+  results:
+  Azaria
+  1
+  USA
+  ```
