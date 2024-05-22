@@ -63,13 +63,80 @@ These are the naming conventions that would work.
 - **fullName = "J James" or full_name = "J James"**
 
 ### **Data Type**
-- A **data type represents a kind of value and determines what operations can be done on it. **Numeric, non-numeric and Boolean (true/false)** data are the most obvious
+- A **data type** represents a kind of value and determines what operations can be done on it. **Numeric, non-numeric and Boolean (true/false)** data are the most obvious.
 
+  ***EXAMPLE**
+  ```
+  brand = "Azaria"
+  age = 1
+  pi = 3.14
+  numbers = []
+  isAdult = True
+    
+  print(type(brand))
+  print(type(age))
+  print(type(pi))
+  print(type(numbers))
+  print(type((isAdult))
+  
+  **Execution output**:
+  <class 'str'>
+  <class 'int'>
+  <class 'float'>
+  <class 'list'>
+  <class 'bool'>
+  ```
 
+### **Dynamically Type Language**
+- **Dynamic Type** which means that variable types are determined and checked at runtime rather than during compilation.
 
+  **EXAMPLE**
+  ```
+  x = 10
+  y = "hello"
+  z = 3.14
 
+  print(type(x))
+  print(type(y))
+  print(type(z))
 
-###**Dictionary**
+  **Execution output**:
+  <class 'int'>
+  <class 'str'>
+  <class 'float'>
+  ```
+### **Comments**
+- **Comments**: can be used to make the code more readable and explain/documenting your **Python Code**. There two ways to make comments ("""comments""" or # comment)
+
+  <img width="1093" alt="Screenshot 2024-05-06 at 12 36 30 AM" src="https://github.com/awkamara/my-python-app/assets/145500282/f93296f2-eb6a-4ab2-95e9-3fa14105cec1">
+
+### **Strings**
+- **Strings**: is a sequence of characters enclosed in either single quotes ('') or a double quotes ("")
+
+  <img width="1115" alt="Screenshot 2024-05-22 at 11 37 08 AM" src="https://github.com/awkamara/my-python-app/assets/145500282/abad3a88-a59c-4e2b-b365-251188cd0929">
+
+### **Multiline and Formatting Strings**
+- **Multiline and Formatting Strings**: triple quotes (""" comment """) can be used to create a multiline string. It allows you to format text over many lines and include line breaks. Put two triple quotes around the multiline Python string, one at the start and one at the end to define it.
+
+  <img width="1114" alt="Screenshot 2024-05-22 at 11 48 05 AM" src="https://github.com/awkamara/my-python-app/assets/145500282/3cc7b818-2c0a-4d7f-9d24-e71e465572ef">
+  
+### **Indentation**
+- **Indentation**:Python uses indentation to define code blocks, which are groups of statements that are executed together.
+  ```
+  # indentation
+  def myFunction():
+      name = "Afonti"
+      surname = "Kama"
+  ```
+  **Keywords**
+  ```
+  'False', 'None', 'True', 'and', 'as', 'assert', 'async', 'await', 'break', 'class', 'continue', 'def', 'del',
+  'elif', 'else', 'except', 'finally', 'for','from', 'global', 'if', 'import', 'in', 'is', 'lambda',
+   'nonlocal', 'not', 'or', 'pass', 'raise', 'return', 'try', 'while', 'with', 'yield'
+  ```
+  
+
+### **Dictionary**
 - Dictionary allows you to store data values in keys: called value keys pairs. Every key value should be unique otherwise will be a conflict.
 
   **EXAMPLE**
