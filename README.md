@@ -15,7 +15,7 @@
 - **Logical Operators**
 - **If Statements**
 - **Quick Word**
--  
+- ** 
   
 
 ## Installing Python and IDE steps 
@@ -79,7 +79,7 @@ These are the naming conventions that would work.
   print(type(numbers))
   print(type((isAdult))
   
-  **Execution output**:
+  **Execution Output**:
   <class 'str'>
   <class 'int'>
   <class 'float'>
@@ -100,7 +100,7 @@ These are the naming conventions that would work.
   print(type(y))
   print(type(z))
 
-  **Execution output**:
+  **Execution Output**:
   <class 'int'>
   <class 'str'>
   <class 'float'>
@@ -134,7 +134,64 @@ These are the naming conventions that would work.
   'elif', 'else', 'except', 'finally', 'for','from', 'global', 'if', 'import', 'in', 'is', 'lambda',
    'nonlocal', 'not', 'or', 'pass', 'raise', 'return', 'try', 'while', 'with', 'yield'
   ```
+
+### **Arithmetic Operators**
+- **Arithmetic Operators**: basic arithmetic operators in Python include **addition (+), subtraction (-), multiplication (*), division (/), Modulo (%), floor division (//),** and **exponentiation** ( **).
+
+<img width="1112" alt="Screenshot 2024-05-22 at 1 27 58 PM" src="https://github.com/awkamara/my-python-app/assets/145500282/1a73093e-7e4b-471c-ab03-02535dedb4a0">
+
+### **Comparison Operators**
+- **Comparison Operators**: are used to compare different values to each other. The return values of comparison operators are either true or false.
+- There are **six operators** and they are
+
+  ```
+  1.) == or equal to,    2.) != or not equal to,  3.) > or greater than, 
+  4.) >= or greater than or equal to, 5.) < or less than, 6.) <= or less than or equal to.
+  ```
+
+  <img width="1114" alt="Screenshot 2024-05-23 at 12 28 46 AM" src="https://github.com/awkamara/my-python-app/assets/145500282/11f06ee4-60b8-4498-a42c-f0e7109bcee8">
+
+### **Logical Operators**
+- **Logical Operators**: are used to combine multiple expressions together and evaluate them as a single boolean expression. There are **three types** of **logical operators** in Python: **'and'**, **'or'**, and **'not'**.
+
+  ```
+  print((10 > 5) and (1 > 3))
+  print(10 < 5 or 1 > 3 or "A" == "A")
+  print(not("Abdul" == "James"))
   
+  **Executed Output**:
+  false
+  true
+  false
+  ```
+
+### **Assignment Operators**
+- **Assignment Operators**: are used to assign values to variables. This operator is used to assign the value of the right side of the expression to the left side operand.
+
+  <img width="1112" alt="Screenshot 2024-05-23 at 11 24 55 AM" src="https://github.com/awkamara/my-python-app/assets/145500282/e03cee14-42d6-4099-a52e-9caa116372d0">
+
+### **If Statements**
+- **If Statements**: the **if statements** is a conditional statement. It is used to execute a block of code only when a specific **condition** is met.
+  ```
+  number = -15
+  if number >= 0:
+        print(f"{number} is positive")
+  elif number == 0:
+        print(number)
+  else:
+        print(f"{number} is negative")
+
+  **Executed Output**:
+  -15 is negative
+  ```
+
+### **Quick Word About If Statements**
+
+### **Ternary If Statements**
+
+
+### **Lists**
+
 
 ### **Dictionary**
 - Dictionary allows you to store data values in keys: called value keys pairs. Every key value should be unique otherwise will be a conflict.
@@ -150,7 +207,7 @@ These are the naming conventions that would work.
   print(person["age"])
   print(person["address"])
 
-  results:
+  **Executed output**:
   Azaria
   1
   USA
