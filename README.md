@@ -186,11 +186,33 @@ These are the naming conventions that would work.
   ```
 
 ### **Quick Word About If Statements**
+- You can only have **one IF and ELSE statement but can have as many ELIF statements
 
 ### **Ternary If Statements**
+- **Ternary If Statements** operator determines **if** a **condition** expression is true or false and then returns the appropriate value as the result. This should only be used if you have one **IF** and **ELSE** statement.
 
+  ```
+  number = 10
+  message = "positive" if number > 0 else "0 or negative"
+  print(message)
+
+  **Executed Output**
+  positive
+  ```
+
+<img width="1117" alt="Screenshot 2024-05-23 at 1 43 11 PM" src="https://github.com/awkamara/my-python-app/assets/145500282/f3babae4-f8d4-4208-9e5a-de5dcc822724">
 
 ### **Lists**
+- **Lists**: is a **flexible, versatile, powerful, and popular built-in data type**. It allows you to create **variable-lenght** and **mutable sequences** of objects. In a list, you can store objects of any type. you can also mix objects of different types within the same list, althought list elements often share the same type.
+- The first element on the list [1, 2, 3, 4, 5] is element **zero, one, and so on**.
+
+  <img width="1120" alt="Screenshot 2024-05-23 at 1 55 51 PM" src="https://github.com/awkamara/my-python-app/assets/145500282/6ce59032-c623-4fb7-8b9e-016ff47899f4">
+
+
+### **List Methods**
+- **List Methods**: 
+
+<img width="1125" alt="Screenshot 2024-05-23 at 2 07 43 PM" src="https://github.com/awkamara/my-python-app/assets/145500282/daf501e5-87d5-46a2-9a40-0aa3c427206e">
 
 
 ### **Dictionary**
