@@ -210,9 +210,65 @@ These are the naming conventions that would work.
 
 
 ### **List Methods**
-- **List Methods**: 
+- **Useful List Methods**: 
 
 <img width="1125" alt="Screenshot 2024-05-23 at 2 07 43 PM" src="https://github.com/awkamara/my-python-app/assets/145500282/daf501e5-87d5-46a2-9a40-0aa3c427206e">
+
+### **Deleting Items form List**
+- The **remove** method removes the first occurance of a specified element from a list. For example, to remove the item "banana" from the list thislist, you would use the following code:
+- The **pop** method allows you to start removing/deleting from the top.
+- The **del** method allows you to delete/remove items by range.
+
+  **EXAMPLE**
+  **Remove the last item**
+  ```
+  thislist = ["apple", "banana", "cherry"]
+  thislist.pop()
+  print(thislist)
+
+  **Excution Output**
+  ['apple', 'banana']
+  ```
+  **Remove the first occurance of "banana"**
+  ```
+  thislist = ["apple", "banana", "cherry", "banana", "kiwi"]
+  thislist.remove("banana")
+  print(thislist)
+
+  **Excution Output**
+  ['apple', 'cherry', 'banana', 'kiwi']
+  ```
+  **Remove the first item**
+  ```
+  thislist = ["apple", "banana", "cherry"]
+  del thislist[0]
+  print(thislist)
+
+  **Excution Output**
+  ['banana', 'cherry']
+  ```
+
+### **Sets**
+- **Sets:** in **python** programming is an unordered collection data type that is iterable, mutable and has no duplicate elements. With **Set* the order is not grantee.
+- **No Duplicate**, **Order is not allowed** **The syntax for Sets is different ({}) from List syntax ([]).
+ 
+  **Example**
+  numbersList = [1, 1]
+  numbersSet = {1, 1}
+  lettersSet = {"A", "A", "B", "C", "C"}
+  print(numbersList)
+  print(numberSet)
+  print(lettersSet)
+  
+  **Excution Output**
+  [1, 1]
+  {1}
+  ```
+  
+### **Set Union Intersection & Difference**
+- **Intersection, Union and difference**: The union between two sets, results in a third set with all the elemments for both sets. The order is not grantee on the result.
+
+  <img width="1149" alt="Screenshot 2024-06-04 at 5 35 27 PM" src="https://github.com/awkamara/my-python-app/assets/145500282/71a1067a-66c4-41f4-a696-a9c9e9c2400e">
 
 
 ### **Dictionary**
@@ -234,3 +290,28 @@ These are the naming conventions that would work.
   1
   USA
   ```
+
+### **For Loops**
+- **For Loop**: A for loop is used for iterating over a sequence (that is either a list, a tuple, a dictionary, a set, or a string). 
+
+<img width="1156" alt="Screenshot 2024-06-04 at 5 54 20 PM" src="https://github.com/awkamara/my-python-app/assets/145500282/117849be-a19c-4392-8d95-fe86c5dd3bc8">
+
+
+### **Loop Through Dictionaries**
+
+
+### **Exercise**
+
+
+### **Exercise Solution**
+
+
+### **While Loop**
+
+
+### **Break and Continue**
+
+
+
+
+  
