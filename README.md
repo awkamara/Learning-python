@@ -298,7 +298,12 @@ These are the naming conventions that would work.
 
 
 ### **Loop Through Dictionaries**
+- You can loop through a dictionary by using a **for** loop.
+- When looping through a dictionary, the return value are the keys of the dictionary, but there are methods to return the values as well.
 
+  **Example**
+
+  <img width="1183" alt="Screenshot 2024-06-06 at 10 36 15 AM" src="https://github.com/awkamara/my-python-app/assets/145500282/655dedf9-7545-4e3a-94cb-17045915c3f3">
 
 ### **Exercise**
 
