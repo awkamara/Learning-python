@@ -306,15 +306,94 @@ These are the naming conventions that would work.
   <img width="1183" alt="Screenshot 2024-06-06 at 10 36 15 AM" src="https://github.com/awkamara/my-python-app/assets/145500282/655dedf9-7545-4e3a-94cb-17045915c3f3">
 
 ### **Exercise**
-
+- numbers = [1, 2, 5, 6, 7, 9] combine these numbers
 
 ### **Exercise Solution**
+  **Answer**
+  ```
+  result = 0
+  numbers = [1, 2, 5, 6, 7, 9]
+  for number in numbers:
+      result += number
+  
+  print(f"Result = {result}")
 
+  **Excution Output**
+
+  Result is 31
+  ```
 
 ### **While Loop**
+- **While Loop**: is used to execute a block of statements repeatedly until a given condition is satisfied. When the condition becomes false, the line immediately after the loop in the program is executed.
+   
+  **Example**
 
+<img width="1151" alt="Screenshot 2024-06-08 at 12 15 09 AM" src="https://github.com/awkamara/my-python-app/assets/145500282/5061b215-ac9e-4b83-80a2-10d83de8308d">
 
 ### **Break and Continue**
+- The **Break** statement is used to terminate the loop or statement in which it is present. The **continue** statement skips the current iteration of the loop and the conrol flow of the program goes to the next 
+  iteration.
+
+  **Example**
+  
+  Break
+  <img width="1148" alt="Screenshot 2024-06-08 at 2 00 22 AM" src="https://github.com/awkamara/my-python-app/assets/145500282/ce21024e-9ec6-43dc-92cd-44739d87bf2a">
+
+  continue
+  ```
+  number = 0
+
+  for n in [1,2,3,4,5,6,7]:
+      if n == 5:
+          break
+      print(n)
+  
+  # while number < 10:
+  #  if number == 5:
+  #       continue
+  #       print("number is 5 hooray")
+  #    number += 1
+  ```
+  ```
+  number = 0
+  
+  while number < 10:
+      if number == 5:
+   #       print("number is 5 hooray")
+      number +=1
+
+  **Executed Output**
+  number is 5 hooray
+  ```
+  
+### **Functions**
+- **Function**: A **function** is a block of code or statement to perform a specific task, known as parameters, into a function.
+
+  **Example**
+  
+  <img width="1173" alt="Screenshot 2024-06-09 at 1 16 16 AM" src="https://github.com/awkamara/my-python-app/assets/145500282/c1978a1a-78e3-4d3a-aa25-2b3e30d1ed36">
+
+### **Parameters and Arguments**
+- A parameter is the variable listed inside the parentheses in the function definition. An argument is the value that are sent to the function when it is called.
+  
+  **Example**
+<img width="1183" alt="Screenshot 2024-06-09 at 1 40 28 AM" src="https://github.com/awkamara/my-python-app/assets/145500282/0403849d-c17a-45e7-be46-59e3dd31c381">
+
+
+### **Return Values From Functions**
+- 
+
+
+### **Built in Functions and Import Statement**
+
+
+### **Creating Modules**
+
+
+### **Clases and Objects**
+
+
+### **Creating Classes and Objects**
 
 
 
