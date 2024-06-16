@@ -381,21 +381,353 @@ These are the naming conventions that would work.
 
 
 ### **Return Values From Functions**
-- 
+- A **return** statement consists of the **return** keyword followed by an optional **return value**. The **return value** of a **Python function** can be any **Python** object.
 
+**Example**
+  ```
+  def is_adult(age):
+      return age >= 16
+
+  def convertGender(gender="unknown):
+      if gender.upper() == "M":
+          return "Male"
+      elif gender.Upper() == "F":
+          return "Female"
+      else:
+          return f"gender {gender} is unknown"
+
+  result = is_adult(80)
+  print(result)
+
+print(convertGender("F"))
+print(convertGender("M"))
+print(convertGender('f"))
+print(convertGender('m"))
+print(convertGender('hello"))
+
+**Execution Output**
+  True
+  ```
+
+<img width="1155" alt="Screenshot 2024-06-10 at 5 06 14 PM" src="https://github.com/awkamara/my-python-app/assets/145500282/b379e8b6-3fc0-4fff-b2b2-8897af2f252b">
 
 ### **Built in Functions and Import Statement**
+- The import statement combines two operations, **It searches for the named module, then it binds the result of that searchto a namein the local scooe**. The search operation of the import statement is defined as a 
+ call to the_import_() function, with the appropriate arguments.
 
+**Example**
+  ```
+  import math
+  
+  print(math.isqrt(45))
+  
+  **Executed Output**
+  6
+  ```
+  **OR**
+
+  ```
+  frome math import isqrt
+
+  print(isqrt(45))
+
+**Executed Output**
+  6
+  ```
 
 ### **Creating Modules**
+- A **module** can contain executable statements as well as function definitions. These statements are intended to initialize the module. They are executed only the first time the module name is encountered in an 
+  import statement.
+  
+**Example**
+<img width="1156" alt="Screenshot 2024-06-12 at 5 29 11 PM" src="https://github.com/awkamara/my-python-app/assets/145500282/4a5907f0-100b-453c-8674-67353ea6a87e">
 
 
 ### **Clases and Objects**
+- A **class** describes the contents of the objects that belong to it. It describes an aggregate of data fields (called instance variables), and defines the operations called **method**, **object**: an object is an
+  element **(or instance)** of a class, objects have the behaviors of their class. **Class** is more like a blueprint with that you can create as many objects as you want.
 
+ 
 
 ### **Creating Classes and Objects**
 
+   **Example**
+  ```
+    class Phone:
+      def __init__(self, brand, price):
+          self.brand = brand
+          self.price = price
+  
+      def call(self, phone_number):
+          print(f"{self.brand} is calling {phone_number}")
+  
+  iphone = Phone("Iphone 7+" ,300)
+  samsung = Phone("Samsung S20",1200)
+  
+  print(iphone.brand)
+  print(iphone.price)
+  print(samsung.brand)
+  print(samsung.price)
+
+ **Executed Output**
+
+  Iphone 7+
+  300
+  Samsung S20
+  1200
+  ```
+
+### **Printing Objects** 
+
+  **Example**
+  ```
+    class Phone:
+      def __init__(self, brand, price):
+          self.brand = brand
+          self.price = price
+  
+      def call(self, phone_number):
+          print(f"{self.brand} is calling {phone_number}")
+
+      def __str__(self) -> str:
+          return f"Brand = {self.brand}\nPrice = {self. price}"
+  
+  iphone = Phone("Iphone 7+" ,300)
+  samsung = Phone("Samsung S20",1200)
+  
+  print(iphone)
+  print(samsung)
+
+ **Executed Output**
+  Brand Iphone 7+
+  Price = 300
+  Brand Samsung S20
+  Price = 1200
+  ```
+
+### **Working With Dates**
+**Example**
+  ```
+  from _datetime import  datetime
+  from _datetime import  date
+  
+  print(datetime.now())
+  print(datetime.now().year)
+  print(datetime.now().month)
+  print(datetime.now().day)
+  print(date.today())
+  print(datetime.now().time())
+
+**Executed Output**
+  2024-06-13 23:44:56.365191
+  2024
+  6
+  13
+  2024-06-13
+  23:44:56.365223
+  ```
+
+### **Formatting Dates**
+
+**Example**
+  ```
+  from datetime import datetime
+  from datetime import date
+  
+  now = datetime.now()
+  print(now)
+  
+  print(now.strftime("%d/%m/%Y %H:%M:%S"))
+  print(now.strftime("%d-%B-%Y %H:%M:%S"))
+  print(now.strftime("%d-%b-%Y %H:%M:%S"))
+  print(now.strftime("%d-%b-%Y"))
+  print(now.strftime("%d-%B-%Y"))
+
+**Executed Output**
+
+  2024-06-13 23:59:26.379253
+  13/06/2024 23:59:26
+  13-June-2024 23:59:26
+  13-Jun-2024 23:59:26
+  13-Jun-2024
+  13-June-2024
+  ```
+
+### **Creating files**
+- File handling is a very important concept for any programmer. It can be used for creating, deleting, and moving files, or store application data, user configurations, videos, images, etc. File handling can also be 
+  use for creating a file. Even files with different extensions like **.pdf, .txt, .jpeg** can be created using file handling in Python. To create a file, the file must be open for writing. To open a file for writing 
+  **access mode** of file must be **w, a, w+, a+. 
+- Enter the these codes below and click run to creat a file.
+
+  **Example**
+  ```
+  file = open("./data.csv", "w")
+  ```
+
+- Writing to a file
+  ```
+  file = open("./data.csv", "r+")
+  file.write("id,name,email\n")
+  file.write("1,Jamila,jamila@gmail.com\n")
+  file.write("2,Alex,alex@gmail.com\n")
+  file.close()
+  ```
+  
+### **Reading From Files
+- **Python** provides built-in functions for creating, writing, and reading files. Two types of files can be handled in Python, normal text files and binary files (written in binary language, 0s and 1s.
+- **Text files** in this file, each line of tet is terminated with a special character call EOL (End of Line), which is the new line character ('\n') in Python by default.
+- **Binary files:** in this type of file, there is no terminator for a line, and the data is stored after converting it into machine-understandable binary language.
+- **# ('W') writing, ('W+') Write and Read, ('a') appending, ('a+') Append and Read,  ('r') reading, ('r+') reading and writing**
+
+  **Example**
+  ```
+  # w writing, a appending, r reading, r+ reading/writing
+  file = open("./data.csv", "r")
+  # print(file.read())   # this is to read the entire file
+  # for line in file:   # read line by line
+  #    print(line)
+  print(file.readline())  # this gives us a list of lines
+  file.close()
+  ```
+  
+### **A Better Way To Work With Files**
+
+  **Example**
+  ```
+  # w writing, a appending, r reading, r+ reading/writing
+  import os.path
+  
+  filename = "data.csv"    # To check if a file exist
+  
+  if os.path.isfile(filename):
+  
+      with open(filename, "r") as file:    # this command automatically close the file
+          print(file.read())
+  else:
+      print(f"file {filename} does not exist")
+
+### **Fetching Data From Internet
+- urllib.request is a **Python** module for **fetching** URLs (Uniform Resource Locators). It offers a very simple interface, in the form of the urlopen function.
+  ```
+  from urllib import request
+
+  r = request.urlopen("http://www.google.com")
+  print(r.getcode())
+  print(r.read())    # read your request
+  ```
+
+### **Fetching Jokes From Internet
+- There is a lot of joke **API** for different types of jokes. **fetching** data from the **web**. Using **.json()** to convert the response to a Python dictionary and then **fetching**.
+
+  **Example**
+  ```
+  from urllib import request
+  import json
+  
+  url = "http://official-joke-api.appspot.com/random_ten"
+  r = request.urlopen(url)
+  print(r.getcode())
+  data = (r.read())
+  jsonData = json.loads(data)
+  # print(r.read())    # read your request
+  print(jsonData)
+  
+  class Joke:
+  
+      def __init__(self, wetup, punchline) -> None:
+          self.setup = setup
+          self.punchline = punchline
+  
+      def __str__(self) -> str:
+          return f"setup {self.setup} punchline {self.punchline}"
+  
+  jokes = []
+  
+  for j in jsonData:   # only to print the setup and punch line
+      setup = j["setup"]
+      punchline = j["punchline"]
+      joke = Joke(setup, punchline)
+      jokes.append(joke)
+  
+  print(f"Got {len(jokes)} jokes")
+  
+  for joke in jokes:
+      print(joke)
+  ```
+
+  **Executed Output**
+  ```
+  /Users/abdulkamara/PycharmProjects/my-python-app/venv/bin/python /Users/abdulkamara/PycharmProjects/my-python-app/venv/main.py 
+  200
+  [{'type': 'general', 'setup': 'What do you call a factory that sells passable products?', 'punchline': 'A satisfactory', 'id': 50}, {'type': 'programming', 'setup': 'Why do programmers always get Christmas and Halloween mixed up?', 'punchline': 'Because DEC 25 = OCT 31', 'id': 389}, {'type': 'general', 'setup': 'What is the difference between ignorance and apathy?', 'punchline': "I don't know and I don't care.", 'id': 249}, {'type': 'general', 'setup': 'How do you find Will Smith in the snow?', 'punchline': ' Look for fresh prints.', 'id': 122}, {'type': 'general', 'setup': 'How many South Americans does it take to change a lightbulb?', 'punchline': 'A Brazilian', 'id': 144}, {'type': 'programming', 'setup': "What's the object-oriented way to become wealthy?", 'punchline': 'Inheritance', 'id': 16}, {'type': 'general', 'setup': 'What did the scarf say to the hat?', 'punchline': 'You go on ahead, I am going to hang around a bit longer.', 'id': 185}, {'type': 'general', 'setup': 'What did the beaver say to the tree?', 'punchline': "It's been nice gnawing you.", 'id': 168}, {'type': 'general', 'setup': 'What’s 50 Cent’s name in Zimbabwe?', 'punchline': '200 Dollars.', 'id': 151}, {'type': 'general', 'setup': 'What did the big flower say to the littler flower?', 'punchline': 'Hi, bud!', 'id': 169}]
+  
+  Got 10 jokes
+  setup What do you call a factory that sells passable products? punchline A satisfactory
+  setup Why do programmers always get Christmas and Halloween mixed up? punchline Because DEC 25 = OCT 31
+  setup What is the difference between ignorance and apathy? punchline I don't know and I don't care.
+  setup How do you find Will Smith in the snow? punchline  Look for fresh prints.
+  setup How many South Americans does it take to change a lightbulb? punchline A Brazilian
+  setup What's the object-oriented way to become wealthy? punchline Inheritance
+  setup What did the scarf say to the hat? punchline You go on ahead, I am going to hang around a bit longer.
+  setup What did the beaver say to the tree? punchline It's been nice gnawing you.
+  setup What’s 50 Cent’s name in Zimbabwe? punchline 200 Dollars.
+  setup What did the big flower say to the littler flower? punchline Hi, bud!
+  
+  Process finished with exit code 0
+  ```
+    
+### **Pip & Modules
+- What is **PIP**? **PIP** is a package manager for **Python packages** or **modules** if you like.
+
+  **Example**
+  ```
+  import requests
+  import json
+  
+  url = "http://official-joke-api.appspot.com/random_ten"
+  
+  response = requests.get(url)
+  print(response.status_code)
+  
+  jsonData = json.loads(response.text)
+  # print(r.read())    # read your request
+  print(jsonData)
+  
+  class Joke:
+  
+      def __init__(self, wetup, punchline) -> None:
+          self.setup = setup
+          self.punchline = punchline
+  
+      def __str__(self) -> str:
+          return f"setup {self.setup} punchline {self.punchline}"
+  
+  jokes = []
+  
+  for j in jsonData:   # only to print the setup and punch line
+      setup = j["setup"]
+      punchline = j["punchline"]
+      joke = Joke(setup, punchline)
+      jokes.append(joke)
+  
+  print(f"Got {len(jokes)} jokes")
+  
+  for joke in jokes:
+      print(joke) 
+  ```
+
+### **Request Module
+- **pyttsx3**: is a text-to-speech conversion library in Python. Unlike alternative libraries, it works offline, and is compatible with both Python 2 and 3.
+- **Python**: convert speech to text and text to speech. Python recognition module as you may guess, (gTTS) stand for **Google Text To Speech**, it is a Python library that interfaces with Google Translate's text-to- 
+  speech.
+
+ **Example**
+  ```
+  
 
 
+### **Text To Speech
+
+### Lets Wrap Up
 
   
